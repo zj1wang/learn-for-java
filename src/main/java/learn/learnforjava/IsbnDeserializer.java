@@ -5,6 +5,7 @@ public class IsbnDeserializer extends JsonDeserializer<BigInteger>{
     int b = 1;
     int c = 1;
     int c = 1;
+    int c = 1;
     int e = 1;
 
 
