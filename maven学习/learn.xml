@@ -1,0 +1,13 @@
+<dependency>
+<!--    三个东西，确定唯一的包      某个依赖，Maven只需要3个变量      -->
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-web</artifactId>
+    <version>1.4.2.RELEASE</version>
+    <scope>compile</scope>
+    <!--compile	编译时需要用到该jar包（默认）;test	编译Test时需要用到该jar包;runtime	编译时不需要，但运行时需要用到
+    provided	编译时需要用到，但运行时由JDK或某个服务器提供	serv-->
+<!--    maven会自动去下载这个包，以及它所依赖的包-->
+</dependency>
+
+<!--如何获取第三方组件的三个要素？search.maven.org搜索关键字，找到对应的组件后，直接复制：-->
+
