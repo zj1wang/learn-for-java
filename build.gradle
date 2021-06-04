@@ -16,9 +16,11 @@ configurations {
 
 repositories {
 	mavenCentral()
+	jcenter()
 }
 
 dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter'
 	implementation 'org.springframework.boot:spring-boot-starter'
 	implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.10.0'
 	implementation 'com.fasterxml.jackson.core:jackson-databind:2.10.0'
@@ -26,6 +28,7 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.mockito:mockito-core:2.0.57-beta'
 
 }
 
