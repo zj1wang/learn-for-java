@@ -1,3 +1,8 @@
+
+//本质：
+/*
+Kotlin 是一个基于 JVM 的新的编程语言，由 JetBrains 开发。 编译为java或者js
+* */
 class Kotlin {
     //定义函数
     fun sum(a: Int, b: String): String {
