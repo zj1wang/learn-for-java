@@ -1,14 +1,17 @@
 package learn.learnforjava;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
 
 import static com.sun.org.apache.xalan.internal.lib.ExsltDatetime.time;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Matchers.anyInt;
 import static org.mockito.Mockito.*;
-
+//*********使用mock注解需要先拓展这个
+@ExtendWith(MockitoExtension.class)
 class learnLombokTest {
     @Mock
     TestMock testMock;
