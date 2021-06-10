@@ -2,11 +2,11 @@ package learn.learnforjava;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.ArgumentCaptor;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import static com.sun.org.apache.xalan.internal.lib.ExsltDatetime.time;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Matchers.anyInt;
 import static org.mockito.Mockito.*;
@@ -40,7 +40,10 @@ class learnLombokTest {
         //Mockito 会跟踪 mock 对象里面所有的方法和变量
         //验证 mock 对象方法是否被调用
         verify(testMock,times(1)).equals(1);
-
+        //参数捕获，用any（），eq（）基本类型，和参数捕获器
+        ArgumentCaptor<Mybean> mybeanArgumentCaptor = ArgumentCaptor.forClass(Mybean.class);
+        verify(testMock).haha(anyString(),eq(new Mybean()));
+        assertEquals(new Mybean(),mybeanArgumentCaptor.getValue());
 
 
 
