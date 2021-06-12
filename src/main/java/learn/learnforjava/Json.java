@@ -54,7 +54,6 @@ class Mybean{
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:sss");
             try {
                 Date parse = simpleDateFormat.parse(text);
-                return parse
             } catch (ParseException e) {
                 e.printStackTrace();
             }

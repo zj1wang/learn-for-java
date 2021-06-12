@@ -11,8 +11,10 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MockMvcBuilder;
+import org.springframework.test.web.servlet.ResultMatcher;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+import org.springframework.web.context.WebApplicationContext;
 
 import java.awt.*;
 
@@ -28,26 +30,24 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 abstract public class Test集成测试 {
     protected MockMvc mockMvc;
     @Autowired
-    private ApplicationContext wc;
+    private WebApplicationContext wc;
 
     @BeforeEach
     //注册mock
     public void baseBefore() {
-        this.mockMvc = MockMvcBuilders.webAppContextSetup(wc);
+        this.mockMvc = MockMvcBuilders.webAppContextSetup(wc).build();
 //        每个测试前注册一个全新的mockMVC
     }
 
     @Test
-    public void testforMVC() {
-        mockMvc.perform(get("\路径")
+    public void testforMVC() throws Exception {
+        mockMvc.perform(get("ddd")
                 .contentType("jason")
                 .accept("xxx")
                 .param("sss", "ssss"))//执行
                 .andExpect(status().isOk())
                 .andExpect(content().contentType("sxxx"))
-                .andExpect(jsonPath("xxx", "xxxx"))
-                .andExpect(jsonPath("xxx", "xxxx"))
-                .andExpect(jsonPath("xxx", "xxxx"));
+                .andExpect((ResultMatcher) jsonPath("xxx", "xxxx"));
     }
 
 

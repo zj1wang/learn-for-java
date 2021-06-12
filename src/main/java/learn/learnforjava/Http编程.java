@@ -1,5 +1,6 @@
 package learn.learnforjava;
 
+import java.net.URI;
 import java.net.http.HttpHeaders;
 import java.net.http.HttpRequest;
 import java.nio.ByteBuffer;
@@ -33,7 +34,7 @@ username=hello&password=123456  body体
 * */
 public class Http编程 {
     public static void main(String[] args) {
-        HttpRequest build = HttpRequest.newBuilder("\sss\sss")
+        HttpRequest build = HttpRequest.newBuilder(URI.create("dsad"))
                 .header("xxx", "xxxx")
                 .header("xxxxx", "sdasda")
                 .header("Content-Type", "application/x-www-form-urlencoded")

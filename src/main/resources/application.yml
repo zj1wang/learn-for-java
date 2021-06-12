@@ -1,0 +1,9 @@
+spring:
+  redis:
+    url:
+    lettuce:
+      pool:
+        max-active:
+
+byd:
+  car："hhaha"
