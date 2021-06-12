@@ -1,2 +1,12 @@
+learn/learnforjava/Test继承.java
+ learn.learnforjava.Test继承
+learn/learnforjava/Test集成测试.java
+ learn.learnforjava.Test集成测试
 learn/learnforjava/LearnForJavaApplicationTests.java
  learn.learnforjava.LearnForJavaApplicationTests
+learn/learnforjava/redis学习/redisTest.java
+ learn.learnforjava.redis学习.redisTest
+learn/learnforjava/learnLombokTest.java
+ learn.learnforjava.learnLombokTest
+learn/learnforjava/redis学习/单元测试学习/Testhaha.java
+ learn.learnforjava.redis学习.单元测试学习.Testhaha

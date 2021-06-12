@@ -7,3 +7,31 @@ spring:
 
 byd:
   car："hhaha"
+#数据类型
+yml学习:
+  #  基本类型
+#  字符串默认不用加"，""会解析转义字符，单引号不会解析转义
+  name: zhangsan
+
+  intger: 11
+  date: 2019/10/03
+  #  map写法 对象写法
+  inters: { 1:2,k2:2,k3:3 }
+  haha:
+    sds: dsad
+    dsads: dsadsa
+  #  数组写法 线性集合写法
+  k1: [ 1,2,3,4 ]
+  k2:
+    - 1
+    - 2
+    - 3
+  #  自定义对象
+  pet:
+    name: aha
+    weitght: 1192
+    list: [ asds,sadas,sadsa ]
+    listDog:
+      - { name: sada,dsad: sad }
+      - { name: sada,dsad: sad }
+      - { name: sada,dsad: sad }
