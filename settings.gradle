@@ -1,1 +1,4 @@
 rootProject.name = 'learn-for-java'
+include 'springcloud--api-learn'
+include 'spring-cloud-provider'
+

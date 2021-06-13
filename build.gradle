@@ -27,6 +27,9 @@ dependencies {
 	implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.10.0'
 	implementation 'ch.qos.logback:logback-classic:1.0.13'
 	implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+	// https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-dependencies
+	runtimeOnly 'org.springframework.cloud:spring-cloud-dependencies:Hoxton.SR5'
+
 
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
