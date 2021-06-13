@@ -3,7 +3,6 @@ package learn.learnforjava.spring注解;
 import learn.learnforjava.redis学习.拦截器;
 import learn.learnforjava.包住他;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
