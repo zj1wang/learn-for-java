@@ -1,0 +1,5 @@
+eureka:
+  client:
+    service-url:
+      #eureka server地址
+      defautlZone: http://xxx/xxx/xx
