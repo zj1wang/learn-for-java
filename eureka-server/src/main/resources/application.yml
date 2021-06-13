@@ -1,0 +1,13 @@
+server:
+  port:2341
+eureka:
+  instance:
+    hostname: localhost #服务端实例名
+  client:
+    register-with-eureka: false #是否向注册中心注册自己
+    fetch-registry: false #表示自己是注册中心
+    service-url:
+      defaultZone: http://xxxx.xxxx
+#      监控页面的地址
+#    反之要注册的服务端端就不是这么写了
+
