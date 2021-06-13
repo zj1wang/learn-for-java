@@ -1,0 +1,7 @@
+spring:
+  redis:
+    url:
+    lettuce:
+      pool:
+        max-active:
+
