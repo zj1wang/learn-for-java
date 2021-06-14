@@ -23,7 +23,6 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
-
 public class Json {
 }
 @JsonInclude(JsonInclude.Include.NON_NULL)//非空的属性会序列化
