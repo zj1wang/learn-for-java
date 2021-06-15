@@ -35,3 +35,9 @@ yml学习:
       - { name: sada,dsad: sad }
       - { name: sada,dsad: sad }
       - { name: sada,dsad: sad }
+
+#Eureka配置
+eureka:
+  client:
+    service-url:
+      defaultZone: eureka服务器地址
