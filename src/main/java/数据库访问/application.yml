@@ -1,0 +1,6 @@
+spring:
+  datasourece:
+    url: jdbc:myqal://localhost:3306
+    username: haha
+    passwordL: ahah
+    driver-class: com.mysql,cj,jdbc,Driver
